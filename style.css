@@ -1,0 +1,146 @@
+body {
+  font-family: Helvetica, arial, sans-serif;
+  color: #673C3E;
+  font-weight: 600;
+  background-color:#faeadd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color:#b58983;
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-color: #895652;
+  border-width: 3px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 90px;
+  margin: 0;
+}
+nav {
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #673C3E;
+  margin: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+}
+a:hover {
+  background-color: #673C3E;
+  color: #efaca6;
+  /* border-color: #673C3E; */
+  /* border-style: solid; */
+}
+h1{
+  color: #673C3E;
+}
+ h2 {
+  color: #673C3E;
+ }
+
+.divImg {
+  padding: 4rem 0;
+  display: flex;
+}
+img {
+  width: 400px;
+  border-radius: 16px;
+  margin-right: 2rem;
+}
+/* #DDBB9F */
+.divMain {
+  background-color: #f6c9c5;
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: #895652;
+  border-width: 3px;
+  box-shadow: rgba(110, 74, 40, 0.37) 0px 7px 29px 0px;
+}
+
+form {
+  background-color:#b58983;
+  border-radius: 0 12px 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 2rem;
+}
+
+label {
+  margin: 8px;
+  margin-left: 2rem;
+  color: #673C3E;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #673C3E;
+  background-color: #faeadd;
+  margin-left: 8px;
+  padding: 5px;
+}
+
+input::placeholder{
+  color: #b58983;
+}
+#buttonSubmit {
+  background-color: #673C3E;
+  color: #efaca6;
+  font-weight: 600;
+  width: 150px;
+  padding: 8px;
+  margin-top: 2rem;
+}
+input[type="date"] {
+  color: #673C3E;
+}
+
+input[type="color"] {
+  height: 40px;
+  width: 40px;
+}
+input[type="radio"] {
+  background-color: #faeadd;
+  width: 20px;
+  padding: 1rem;
+  background-color: #673C3E;
+}
+input[type="range" i] {
+  color: #673C3E;
+  appearance: none;
+  background-color: #895652;
+  height: 4px;
+  /* padding: 1rem; */
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #895652;
+}
