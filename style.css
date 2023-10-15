@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, arial, sans-serif;
   color: #673C3E;
-  font-weight: 600;
+  font-weight: 500;
   background-color:#faeadd;
   display: flex;
   flex-direction: column;
@@ -16,17 +16,17 @@ header {
   align-items: center;
   width: 100%;
   background-color:#b58983;
-  margin-bottom: 2rem;
   border-style: solid;
   border-color: #895652;
-  border-width: 3px;
+  border-width: 0 0 3px 0;
+  box-shadow: rgba(110, 74, 40, 0.37) 0px 4px 20px 0px;
 }
 .logo {
   display: flex;
   align-items: center;
 }
 .logo img {
-  width: 90px;
+  width: 60px;
   margin: 0;
 }
 nav {
@@ -35,22 +35,26 @@ nav {
 a{
   text-decoration: none;
   color: #673C3E;
-  margin: 1rem;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 10px;
+  margin: 8px;
+  /* font-weight: 600; */
+  padding: 8px;
+  border-radius: 8px;
 }
 a:hover {
   background-color: #673C3E;
   color: #efaca6;
-  /* border-color: #673C3E; */
-  /* border-style: solid; */
 }
 h1{
   color: #673C3E;
+  font-size: 20px;
 }
  h2 {
   color: #673C3E;
+  font-size: 18px;
+  margin-bottom: 0;
+ }
+ form p {
+  font-weight: 700px;
  }
 
 .divImg {
@@ -58,7 +62,7 @@ h1{
   display: flex;
 }
 img {
-  width: 400px;
+  width: 260px;
   border-radius: 16px;
   margin-right: 2rem;
 }
@@ -66,7 +70,7 @@ img {
 .divMain {
   background-color: #f6c9c5;
   margin: auto;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -83,14 +87,13 @@ form {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 label {
   margin: 8px;
   margin-left: 2rem;
   color: #673C3E;
-  font-weight: 600;
   display: flex;
   align-items: center;
 }
@@ -114,28 +117,31 @@ input::placeholder{
   font-weight: 600;
   width: 150px;
   padding: 8px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 input[type="date"] {
   color: #673C3E;
 }
 
 input[type="color"] {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+  padding: 1px;
 }
-input[type="radio"] {
+/* input[type="radio"] {
   background-color: #faeadd;
   width: 20px;
   padding: 1rem;
   background-color: #673C3E;
+} */
+.divGender {
+  display: flex;
 }
 input[type="range" i] {
   color: #673C3E;
   appearance: none;
   background-color: #895652;
   height: 4px;
-  /* padding: 1rem; */
 }
 footer {
   display: flex;
