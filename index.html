@@ -22,34 +22,36 @@
   </header>
   <div class="divMain">
     <img src="images/petremovebg.png" alt="" srcset="">
-    <form>
+    <form method="post" action="https://652c9f7cd0d1df5273ef83fd.mockapi.io/pets/" target="_blank">
       <h2>We love pets!</h2>
       <p>Giv us the basic about your pet</p>
       <label for="name">Name
-        <input type="text" placeholder="Pet's name">
+        <input type="text" id="name" name="name" placeholder="Pet's name">
       </label>
-      <label>Breed
-        <input type="text" placeholder="Pet breed">
+      <label for="breed">Breed
+        <input type="text" id="breed" name="breed" placeholder="Pet breed">
       </label>
-      <label for=""> Weight
-        <input type="number" id="Weight" placeholder="Pet's weight">
+      <label for="wheight"> Weight
+        <input type="number" id="weight" name="weight" placeholder="Pet's weight">
       </label>
       Gender:
       <div class="divGender">
-        <label>Female
-          <input type="radio" id="fem" class="inputRadio" value="Female">
+        <label for="fem" class="labelRadio">
+          <input type="radio" id="fem" name="gender" class="inputRadio" value="Female">
+          Female
         </label>
-        <label>Male
-          <input type="radio" class="inputRadio" value="Male">
+        <label for="male" class="labelRadio">
+          <input type="radio" id="male" name="gender" class="inputRadio" value="Male">
+          Male
         </label>
       </div>
-      <label>Date of Birth</label>
-      <input type="date">
-      <Label>Pet color
-        <input type="color">
+      <label for="birth">Date of Birth</label>
+      <input type="date" id="birth" name="birth">
+      <Label for="color">Pet color
+        <input type="color" id="color" name="color">
       </Label>
-      <label for="" id="rangeDocile">Docile
-        <input type="range" id="points" name="points" min="0" max="10">
+      <label for="docile" id="rangeDocile">Docile
+        <input type="range" id="docile" name="docile" min="0" max="10">
       </label>
       <input type="submit" value="Submit" id="buttonSubmit">
     </form>

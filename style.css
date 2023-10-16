@@ -91,7 +91,6 @@ form {
 
 label {
   margin: 6px;
-  margin-left: 2rem;
   color: #673C3E;
   display: flex;
   align-items: center;
@@ -131,14 +130,21 @@ input[type="color"] {
   width: 30px;
   padding: 1px;
 }
-/* input[type="radio"] {
-  background-color: #faeadd;
-  width: 20px;
-  padding: 1rem;
-  background-color: #673C3E;
-} */
+
 .divGender {
   display: flex;
+  flex-direction: row;
+}
+.labelRadio{
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #673C3E;
+  background-color: #faeadd;
+  margin-left: 8px;
+  padding: 4px 12px 4px 0px;
+  font-size: 14px;
+
 }
 input[type="range" i] {
   color: #673C3E;
