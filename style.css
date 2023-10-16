@@ -18,8 +18,7 @@ header {
   background-color:#b58983;
   border-style: solid;
   border-color: #895652;
-  border-width: 0 0 3px 0;
-  box-shadow: rgba(110, 74, 40, 0.37) 0px 4px 20px 0px;
+  border-width: 0 0 2px 0;
 }
 .logo {
   display: flex;
@@ -36,12 +35,11 @@ a{
   text-decoration: none;
   color: #673C3E;
   margin: 8px;
-  /* font-weight: 600; */
   padding: 8px;
   border-radius: 8px;
 }
 a:hover {
-  background-color: #673C3E;
+  background-color: #895652;
   color: #efaca6;
 }
 h1{
@@ -55,6 +53,7 @@ h1{
  }
  form p {
   font-weight: 700px;
+  margin-top: 0;
  }
 
 .divImg {
@@ -66,10 +65,9 @@ img {
   border-radius: 16px;
   margin-right: 2rem;
 }
-/* #DDBB9F */
 .divMain {
   background-color: #f6c9c5;
-  margin: auto;
+  margin: 3rem auto auto auto;
   max-width: 900px;
   display: flex;
   flex-direction: row;
@@ -81,6 +79,7 @@ img {
   box-shadow: rgba(110, 74, 40, 0.37) 0px 7px 29px 0px;
 }
 
+
 form {
   background-color:#b58983;
   border-radius: 0 12px 12px 0;
@@ -91,7 +90,7 @@ form {
 }
 
 label {
-  margin: 8px;
+  margin: 6px;
   margin-left: 2rem;
   color: #673C3E;
   display: flex;
@@ -101,7 +100,7 @@ label {
 input {
   border-radius: 8px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   border-color: #673C3E;
   background-color: #faeadd;
   margin-left: 8px;
@@ -112,12 +111,16 @@ input::placeholder{
   color: #b58983;
 }
 #buttonSubmit {
-  background-color: #673C3E;
+  background-color: #895652;
+  border-style: none;
   color: #efaca6;
   font-weight: 600;
   width: 150px;
-  padding: 8px;
+  padding: 10px;
   margin-top: 1rem;
+}
+#buttonSubmit:hover{
+  background-color: #673C3E;
 }
 input[type="date"] {
   color: #673C3E;
@@ -139,6 +142,7 @@ input[type="color"] {
 }
 input[type="range" i] {
   color: #673C3E;
+  border-style: solid;
   appearance: none;
   background-color: #895652;
   height: 4px;
@@ -149,4 +153,31 @@ footer {
   align-items: center;
   font-size: 12px;
   color: #895652;
+}
+
+@media (max-width:645px) {
+ .divMain {
+  flex-direction: column;
+  background-color: #b58983;
+ }
+ .divMain img {
+  margin: 0;
+  width: 200px;
+ }
+ form {
+  border-radius: 0 0 12px 12px;
+  margin: 0
+ }
+ a {
+  margin: auto;
+ }
+ label {
+  margin-left: 0;
+ }
+}
+
+@media (max-width:355px) {
+  a {
+    display: none;
+  }
 }
